@@ -18,9 +18,9 @@ def main(argv):
             inputwishlist = arg
     name = inputwishlist
     w = Wishlist(name)
+    print('"'+'title'+'"'+','+'"'+'url'+'"')
     for item in w:
         we_json = item.jsonable()
-        print('"'+'title'+'"'+','+'"'+'url'+'"')
         print('"'+we_json["title"]+'"'+","+'"'+we_json["url"]+'"')
 if __name__ == "__main__":
    main(sys.argv[1:])
